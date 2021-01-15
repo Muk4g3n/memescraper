@@ -10,7 +10,7 @@ headers = {
 page = requests.get(URL, headers=headers)
 
 soup = BeautifulSoup(page.content, 'html.parser')
-imgs = soup.find_all('img',{'class':'media-element'})
+imgs = soup.find_all('img')
 i = 0
 for img in imgs:
 
